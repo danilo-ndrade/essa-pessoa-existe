@@ -455,7 +455,7 @@ function getRandomIndex() {
   window.addEventListener("load", loadRandomImage);
   
   // Lidar com o clique no botão "Próxima Imagem"
-  var btnNext = document.getElementById("btn-next");
+  var btnNext = document.querySelector("#btn-next");
   btnNext.addEventListener("click", loadRandomImage);
 
 
