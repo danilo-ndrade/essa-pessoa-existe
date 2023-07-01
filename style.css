@@ -52,4 +52,8 @@ a {
     max-width: 600px;
 }
 
+.dialog-close-btn-container {
+    text-align: end;
+}
+
 
