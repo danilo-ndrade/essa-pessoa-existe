@@ -10,20 +10,31 @@
 
 <body>
 
-    <img src="/images/assets/val_0.JPEG" alt="">
+    <div class="btn-toggle-lang-container">
+        <div class="btn-lang-outter">
+            <div class="btn-lang-inner">
+                <span class="ptbr">PT</span>
+                <span class="eng">EN</span>
+            </div>
+        </div>
+    </div>
 
     <div class="content">
-        <h1>essa pessoa existe</h1>
+        <h1 class="ptbr">essa pessoa existe</h1>
+        <h1 class="eng">this person exists</h1>
         <div id="image-container">
             <img id="image" src="" alt="Imagem Aleatória" class="imagem">
         </div>
         <div class="dialog-content-container">
-            <button id="btn-next" class="btn">Próxima</button>
+            <button id="btn-next" class="btn">
+                <span class="ptbr">Próxima</span>
+                <span class="eng">Next</span>
+            </button>
             <dialog data-modal class="about-dialog">
                 <div class="dialog-close-btn-container">
                     <button class="btn" data-close-modal>X</button>
                 </div>
-                <div class="about-container">
+                <div class="about-container ptbr">
                     <h2>Sobre o projeto</h2>
                     <p>
                         <i>essa pessoa existe</i> apresenta imagens, recolhidas da database [<a
@@ -38,6 +49,24 @@
                     </p>
                     <p>
                         Segundo o site da ImageNet, existem 14,197,122 imagens em sua database.
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="about-container eng">
+                    <h2>About</h2>
+                    <p>
+                        <i>thispersonexists.com</i> showcases images collected from the ImageNet[<a
+                            href="https://www.image-net.org/">https://www.image-net.org/</a>] database that feature
+                        individuals.
+                    </p>
+                    <p>
+                        Databases like ImageNet are used in processes and research related to computer vision, machine
+                        learning, deep learning, and artificial intelligence.
+                    </p>
+                    <p>
+                        According to the ImageNet website, there are 14,197,122 images in their database.
                     </p>
                     <p>
 

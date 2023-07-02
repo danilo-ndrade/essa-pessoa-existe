@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded',() => {
+
+
 var imagePaths = [
   "assets/images/val_0.JPEG",
   "assets/images/val_10.JPEG",
@@ -474,3 +477,37 @@ function getRandomIndex() {
   closeModal.addEventListener("click", () => {
     aboutDialog.close()
   } )
+
+
+// TOGGLE LANGUAGE FUNCTION 
+  const languageToggleBtn = document.querySelector(".btn-lang-inner");
+  const ptbrElements = document.getElementsByClassName('ptbr');
+  const engElements = document.getElementsByClassName('eng');
+
+  languageToggleBtn.addEventListener('click', () => {
+
+    languageToggleBtn.classList.toggle('btn-lang-toggle-animation');
+    
+    
+    var ptbrDisplay = window.getComputedStyle(ptbrElements[0]).display;
+
+  if (ptbrDisplay === 'block') {
+    for (var i = 0; i < ptbrElements.length; i++) {
+      ptbrElements[i].style.display = 'none';
+    }
+    for (var j = 0; j < engElements.length; j++) {
+      engElements[j].style.display = 'block';
+    }
+  } else {
+    for (var i = 0; i < ptbrElements.length; i++) {
+      ptbrElements[i].style.display = 'block';
+    }
+    for (var j = 0; j < engElements.length; j++) {
+      engElements[j].style.display = 'none';
+    }
+  }
+
+  })
+
+
+})
